@@ -16,14 +16,26 @@ a:hover {
 header {
     position: fixed;
     top: 0;
-    display: inline-block;
+    display: grid;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(180deg, #800000 90%, #a00000) ;
     text-align: center;
+    place-items: center;
 }
 
-header > a {
+nav.nav > a {
+    display: flex;
+    align-items: center;
+}
+
+nav.nav > a > img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+nav.nav > a {
     color: gold;
     font-weight: bold;
 }
